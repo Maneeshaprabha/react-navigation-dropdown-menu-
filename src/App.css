@@ -1,0 +1,99 @@
+/* app.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.nav-area {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  margin-right: 60px;
+}
+
+.menus {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Display the menu items in a row */
+}
+
+.menu-items {
+  font-size: 14px;
+  margin-right: 35px;
+  position: relative;
+}
+
+.menu-items a,
+.menu-items button {
+  text-decoration: none;
+  font-size: inherit;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  display: inline-block; /* Display the links/buttons inline */
+}
+
+.menu-items button {
+  border: none;
+  background-color: transparent;
+}
+
+.menu-items a:hover,
+.menu-items button:hover {
+  background-color: #e32932;
+  border-radius: 5px;
+}
+
+.arrow::after {
+  content: "";
+  display: inline-block;
+  margin-left: 0.28em;
+  vertical-align: 0.09em;
+  border-top: 0.42em solid;
+  border-right: 0.32em solid transparent;
+  border-left: 0.32em solid transparent;
+}
+ul {
+  display: flex;
+  list-style: none;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-right: 10px;
+}
+
+/* Dropdown.css */
+
+
+.dropdown-submenu {
+  white-space: nowrap; /* Prevent line break */
+  margin-right: 20px; /* Adjust the margin to add space between submenu boxes */
+  background-color: #282c34; /* Add red background color */
+  padding: 20px; /* Add padding to the submenu boxes */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  position: absolute;
+
+}
+.dropdown.show {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute; /* Ensure the submenu boxes are positioned on top */
+}
+
